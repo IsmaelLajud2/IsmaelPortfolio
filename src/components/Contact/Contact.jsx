@@ -1,9 +1,33 @@
-import { useRef } from 'react'
+import { useRef ,useState } from 'react'
 import '../Contact/ContactStyles.css'
 import { motion ,useInView } from 'framer-motion'
 import EmailSvg from '../../svg/EmailSvg'
 import PhoneSvg from '../../svg/PhoneSvg'
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
+
+const [error, setError] = useState(false) 
+const [succes, setSucces] = useState(false) 
+
+
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_w6601v4', 'template_waw8o0v', formRef.current, {
+            publicKey: 'qXKTq5sqRYqCPKa5i',
+          })
+          .then(
+            (result) => {
+              setSucces(true)
+            },
+            (error) => {
+              setError(true)
+            },
+          );
+      };
 
 
  const variants ={
@@ -22,7 +46,7 @@ const Contact = () => {
  }   
 
  const ref=useRef()
-
+ const formRef =useRef()
  const isInView=useInView(ref,{margin:"-100px"})
   return (
     <motion.div initial="initial" whileInView="animate" className='contact-section' variants={variants}>
@@ -49,7 +73,7 @@ d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8
 stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 </motion.div> 
-        <motion.form className='form-field'
+        <motion.form onSubmit={sendEmail} ref={formRef} className='form-field'
         initial={{opacity:0}} animate={ isInView &&{opacity:1}}transition={{delay:3, duration:1}} >
 
 <input className='input-name' type="text" required id='name' name='name' placeholder='' />
@@ -60,9 +84,11 @@ stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejo
 <label htmlFor='email' className='email-label'>Email</label>
 
 
-<textarea className='text-tarea' name="comentarios" id="comentarios" placeholder=''></textarea>
-<label htmlFor='comentarios' className='text-tarealabel'>Comentarios</label>
+<textarea className='text-tarea' name="message" id="comentarios" placeholder=''></textarea>
+<label htmlFor='message' className='text-tarealabel'>Comentarios</label>
 <button type='submit' className='form-button'>Enviar</button>
+{error && "ERROR"}
+{succes && "Exito"}
 </motion.form>
         </div>
     </motion.div>

@@ -7,7 +7,7 @@
 
     align-items: center;
     gap: 50px;
-
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -21,7 +21,7 @@
 }
 
 .span-contact {
-    font-weight: 300;
+    font-weight: 500;
     align-content: center;
     align-items: center;
     text-align: center;
