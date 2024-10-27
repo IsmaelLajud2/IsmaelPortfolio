@@ -1,3 +1,5 @@
+@import url(../../app.scss);
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -6,6 +8,7 @@
     justify-content: center;
     color: black;
     height: 100px;
+    overflow: hidden;
     position: absolute;
 }
 
@@ -45,4 +48,16 @@
 
 .link-nav {
     font-size: 40px;
+}
+
+@media (max-width:900px) {
+    .links-container {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .sidebar {
+        overflow: visible;
+    }
 }
