@@ -1,13 +1,107 @@
 .hero {
-    height: calc(100vh - 100px);
-    background-color: linear-gradient(180deg, #0c0c1d, #111132);
+    height: calc(100vh);
     overflow: hidden;
     position: relative;
 }
 
 .imagen-container {
     height: 100%;
+
+    width: 50%;
+    top: -20px;
+    left: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imagen-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.wrapper-hero {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+}
+
+
+
+.user-name {
+    font-size: 30px;
+    color: rebeccapurple;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.user-role {
+    font-size: 60px;
+}
+
+.button-hero {
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+.button-hero:last-child {
+    color: #0c0c1d;
+    background-color: white;
+}
+
+.slindingTextContainer {
     position: absolute;
-    right: 0;
-    top: 0;
+    font-size: 50vh;
+    bottom: -100px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    font-weight: bold;
+
+}
+
+.scroll-down {
+    animation: bounce 2s linear infinite;
+    width: 50px;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
 }

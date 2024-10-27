@@ -1,0 +1,202 @@
+.contact-section {
+    height: 100%;
+    margin: auto;
+    max-width: 1366px;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.contact-textcontainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    top: -60px
+}
+
+.span-contact {
+    font-weight: 300;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.title-contact {
+    font-size: 60px;
+
+}
+
+
+.PhoneSVG {
+
+    position: absolute;
+    margin: auto;
+}
+
+.form-container {
+    flex: 1;
+    position: relative
+}
+
+.form-field {
+    position: relative;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    top: 50px
+}
+
+
+.form-field input {
+    width: 500px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: transparent;
+    color: rgb(253, 253, 253);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(72, 70, 70);
+
+
+    margin-bottom: 60px;
+
+}
+
+.form-field label {
+    position: absolute;
+
+    font-family: 'Montserrat', sans-serif;
+
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%);
+    color: rgb(72, 70, 70);
+    font-size: 19px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.text-tarea {
+    background-color: transparent;
+    color: white;
+    max-height: 130px;
+    max-width: 500px;
+    min-height: 130px;
+    min-width: 500px;
+    font-size: 1rem;
+    border: 1px solid rgb(72, 70, 70);
+    outline: none;
+    padding: 10px;
+
+    transition: border 0.3s ease;
+
+}
+
+
+
+
+textarea:focus {
+    border: 2px solid #1d7175;
+
+}
+
+.text-tarealabel {
+    top: 220px;
+    left: 1%;
+}
+
+.text-tarea:focus+.text-tarealabel,
+.text-tarea:not(:placeholder-shown)+.text-tarealabel {
+    top: 200px;
+
+    left: 10px;
+    font-size: 16px;
+    background-color: #1d7175;
+    color: white;
+    padding: 0 10px;
+}
+
+
+.text-tarea:not(:placeholder-shown)+.text-tarealabel {
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+
+input:focus+label,
+input:not(:placeholder-shown)+label {
+    top: 0;
+
+    left: 10px;
+    font-size: 16px;
+    background-color: #1d7175;
+    color: white;
+    padding: 0 10px;
+}
+
+
+input:not(:placeholder-shown)+label {
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+.input-name+.name-label {
+    top: 20px;
+
+}
+
+.input-email+.email-label {
+    top: 120px;
+}
+
+
+
+.input-name:focus+.name-label,
+.input-name:not(:placeholder-shown)+.name-label {
+    top: 0;
+    left: 1%;
+}
+
+.input-email:focus+.email-label,
+.input-email:not(:placeholder-shown)+.email-label {
+    top: 100px;
+    left: 1.5%;
+
+}
+
+
+
+.form-button {
+    width: 50%;
+    margin-top: 60px;
+    padding: 10px 0 10px 0;
+    background-color: #06b5c1;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.form-button:hover {
+    background-color: #282828;
+    cursor: pointer;
+
+}
