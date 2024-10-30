@@ -7,7 +7,7 @@
 .imagen-container {
     height: 100%;
 
-    width: 50%;
+
     margin-top: 200px;
     left: 700px;
     display: flex;
@@ -99,7 +99,7 @@
 
 .scroll-down {
     animation: bounce 2s linear infinite;
-    width: 50px;
+
 
 }
 
@@ -121,9 +121,11 @@
     display: flex;
     border-right: 5px solid;
     width: 100%;
+    max-width: 650px;
     padding: 0;
     margin: 0;
     opacity: 0;
+    font-family: "Montserrat", sans-serif;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
@@ -152,5 +154,51 @@
     100% {
         width: 100%;
         opacity: 1;
+
+    }
+}
+
+@media (max-width:960px) {
+    .text-container {
+        font-size: small;
+        gap: 30px;
+        margin-top: 70px;
+        padding: 0 10px 0 10px;
+        text-align: left;
+
+    }
+
+    .description-role {
+        white-space: pre-line;
+        border: none;
+        max-width: 90vw;
+        font-size: 4vw;
+        animation: none;
+        opacity: 1;
+
+
+    }
+
+    .user-name {
+        font-size: 8vw;
+    }
+
+    .user-role {
+        font-size: 50px;
+    }
+
+    .wrapper-hero {
+        flex-direction: column;
+    }
+
+    .imagen-container {
+        margin-top: 0;
+        z-index: 10;
+    }
+
+    .scroll-down {
+        position: relative;
+        top: 380px;
+        z-index: 11;
     }
 }

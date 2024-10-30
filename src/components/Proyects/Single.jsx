@@ -20,7 +20,7 @@ const y = useTransform(scrollYProgress,[0,1],[-300,300])
              <motion.div style={{y}}   className='proyect-text-container'>
                 <h2 className='proyect-title'>{item.title}</h2>
                 <p className='proyect-description'>{item.description}</p>
-                <button className='proyect-button'>Link</button>
+                <button className='proyect-button'><a href={item.link} target='_blank'>Visitiar</a></button>
              </motion.div>
              </div>
              </div>

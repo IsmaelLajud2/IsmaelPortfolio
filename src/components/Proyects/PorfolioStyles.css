@@ -56,16 +56,19 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
+    margin-bottom: 70px;
 }
 
 .proyect-title {
     font-size: 60px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .proyect-description {
-    color: gray;
-    font-size: 20px;
+    color: #dcdcdc;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .proyect-button {
@@ -74,12 +77,47 @@
     background-color: orange;
     width: 200px;
     cursor: pointer;
-    padding: 10px
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 @media (max-width:950px) {
     .proyect-wrapper {
         display: flex;
         flex-direction: column;
+
+    }
+
+    .h1-proyectos {
+        font-size: 50px;
+
+    }
+
+    .imagen-proyect-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-proyect {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        object-fit: fill;
+        max-width: 100%;
+        border: none;
+        border-radius: 10px;
+
+    }
+
+    .proyect-text-container {
+        position: relative;
+        top: 180px;
+        padding: 0 10px 0 10px;
+        margin: 0;
+        font-size: 20px;
     }
 }

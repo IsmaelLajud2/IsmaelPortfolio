@@ -42,3 +42,20 @@
     position: absolute;
     z-index: 1;
 }
+
+@media (max-width:960px) {
+    .parallax-title {
+        font-size: 72px;
+    }
+
+    .mountains {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .planets {
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+}

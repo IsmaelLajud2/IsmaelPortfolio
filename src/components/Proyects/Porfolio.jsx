@@ -9,25 +9,30 @@ const Porfolio = () => {
         id:1,
         title:"Minimalist E-Commerce",
         video:"Videos/MinimalistVideo.mp4",
-        description:"E-commerce"
+        description: "E-commerce desarrollado en React, con un enfoque minimalista y un diseño responsive que permite una experiencia de usuario fluida.",
+        link:"https://minimalist-beta.vercel.app/home"
     },  
      {
         id:2,
-        title:"Minimalist E-Commerce",
-        img:"ProyectsImages/AgenciaMarketing.png",
-        description:"E-commerce"
+        title:"Start-up Marketing",
+        video:"Videos/AgenciadeMarketing.mp4",
+        description: "Landing page para una agencia de marketing creada en React, optimizada para dispositivos móviles y con un diseño atractivo que destaca los servicios ofrecidos.",
+        link:"https://startup-landing-nu.vercel.app/"
     }, 
      {
         id:3,
-        title:"Minimalist E-Commerce",
-        img:"ProyectsImages/GymProyectPhoto.png",
-        description:"E-commerce"
+        title:"Fitness Gym",
+        video:"Videos/GymProyect.mp4",
+        description: "Aplicación web para un gimnasio desarrollada en React, con API en Node.js y Base de Datos para manejar los planes y ademas un diseño responsive que facilita el acceso desde cualquier dispositivo.",
+        link:"https://gym-proyect-navy.vercel.app/"
+        
     },   
     {
         id:4,
-        title:"Minimalist E-Commerce",
-        img:"ProyectsImages/RickAndMorty.png",
-        description:"E-commerce"
+        title:"Rick and Morty Website",
+        video:"Videos/RickAndMorty.mp4",
+        description: "Sitio web inspirado en la serie 'Rick and Morty', realizado en React. Presenta un diseño atractivo y responsive, permitiendo explorar información sobre los personajes y episodios de forma dinámica.",
+        link:"https://rick-and-morty-blond-iota.vercel.app/"
     }
    ] 
 
@@ -45,7 +50,7 @@ const scaleX=useSpring(scrollYProgress,{
   return (
     <div className='porfolio-container' ref={ref}>
         <div className="progress">
-            <h1>Mis Proyectos</h1>
+            <h1 className='h1-proyectos'>Mis Proyectos</h1>
         
         <motion.div 
         style={{scaleX}}
