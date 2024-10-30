@@ -200,3 +200,39 @@ input:not(:placeholder-shown)+label {
     cursor: pointer;
 
 }
+
+@media (max-width:950px) {
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+        gap: 0;
+    }
+
+    .form-container {
+        width: 400px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .form-field {
+        top: 5px;
+        margin-right: 0;
+        position: revert
+    }
+
+    .text-tarea {
+        width: 400px;
+
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+}

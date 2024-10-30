@@ -14,19 +14,19 @@ const Porfolio = () => {
      {
         id:2,
         title:"Minimalist E-Commerce",
-        img:"ProyectsImages/Minimalist.png",
+        img:"ProyectsImages/AgenciaMarketing.png",
         description:"E-commerce"
     }, 
      {
         id:3,
         title:"Minimalist E-Commerce",
-        img:"ProyectsImages/Minimalist.png",
+        img:"ProyectsImages/GymProyectPhoto.png",
         description:"E-commerce"
     },   
     {
         id:4,
         title:"Minimalist E-Commerce",
-        img:"ProyectsImages/Minimalist.png",
+        img:"ProyectsImages/RickAndMorty.png",
         description:"E-commerce"
     }
    ] 

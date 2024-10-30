@@ -24,7 +24,7 @@ function App() {
     <section id='Proyectos'><Parallax type="portfolio" /></section>
    
     <Porfolio/>
-    <section id='Contact' ><Contact/></section>
+    <section id='Contacto' ><Contact/></section>
     
 
     </>

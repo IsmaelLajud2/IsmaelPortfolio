@@ -20,10 +20,10 @@ const [succes, setSucces] = useState(false)
             publicKey: 'qXKTq5sqRYqCPKa5i',
           })
           .then(
-            (result) => {
+            () => {
               setSucces(true)
             },
-            (error) => {
+            () => {
               setError(true)
             },
           );
