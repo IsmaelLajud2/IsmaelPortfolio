@@ -30,6 +30,7 @@
     padding-top: 10px;
 }
 
+
 .title-contact {
     font-size: 60px;
 
@@ -235,4 +236,8 @@ input:not(:placeholder-shown)+label {
     .form-button {
         width: 100%;
     }
+}
+
+.copy-svg:hover {
+    cursor: pointer;
 }

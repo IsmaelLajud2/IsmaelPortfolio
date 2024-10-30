@@ -5,12 +5,13 @@ import EmailSvg from '../../svg/EmailSvg'
 import PhoneSvg from '../../svg/PhoneSvg'
 import emailjs from '@emailjs/browser';
 
+import CopyButton from './CopyButton'
+import SocialMedia from './SocialMedia'
+
 const Contact = () => {
 
 const [error, setError] = useState(false) 
 const [succes, setSucces] = useState(false) 
-
-
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -54,13 +55,18 @@ const [succes, setSucces] = useState(false)
             <motion.h1 variants={variants} className='title-contact'>Contáctame</motion.h1>
             <motion.div variants={variants} className='items'>
                 <h2 className='h2-contact'>Email</h2>
-                <span className='span-contact'><EmailSvg/>ismael.lajud65@gmail.com</span>
+                <span className='span-contact'><EmailSvg/><a href='mailto:ismael.lajud65@gmail.com'>ismael.lajud65@gmail.com</a>
+              <CopyButton/>
+                </span>
             </motion.div>
             <motion.div  variants={variants}className='items'>
                 <h2>Teléfono</h2>
                 <span className='span-contact'> <PhoneSvg/> +34 666-906-067</span>
+               
             </motion.div>
+            <SocialMedia/>
         </motion.div>
+      
         <div className='form-container'>
     <motion.div ref={ref} initial={{opacity:1}} animate={ isInView && {opacity:0}}transition={{delay:2, duration:1}}  className='PhoneSVG'>
           
@@ -90,7 +96,9 @@ stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejo
 {error && "ERROR"}
 {succes && "Exito"}
 </motion.form>
+
         </div>
+       
     </motion.div>
   )
 }

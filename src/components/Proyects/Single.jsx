@@ -15,7 +15,7 @@ const y = useTransform(scrollYProgress,[0,1],[-300,300])
                 <div className='proyect-wrapper'>
                     <div className='imagen-proyect-container' ref={ref}>
 
-             <img alt='proyects-imagen' className='imagen-proyect' src={item.img}/>
+             <video autoPlay loop muted alt='proyects-imagen' className='imagen-proyect' src={item.video}/>
                     </div>
              <motion.div style={{y}}   className='proyect-text-container'>
                 <h2 className='proyect-title'>{item.title}</h2>

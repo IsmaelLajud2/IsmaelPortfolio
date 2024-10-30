@@ -8,7 +8,7 @@ const Porfolio = () => {
     {
         id:1,
         title:"Minimalist E-Commerce",
-        img:"ProyectsImages/Minimalist.png",
+        video:"Videos/MinimalistVideo.mp4",
         description:"E-commerce"
     },  
      {

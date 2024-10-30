@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: center;
     color: orange;
     font-size: 36px;
@@ -45,9 +45,11 @@
 }
 
 .imagen-proyect {
-    width: 100%;
+
     height: 100%;
     object-fit: cover;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .proyect-text-container {
