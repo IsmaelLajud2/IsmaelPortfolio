@@ -40,10 +40,10 @@ const sliderVariants ={
       <motion.div className='text-container'variants={textVariants} initial="initial" animate="animate"  >
         <motion.p  variants={textVariants}  className='user-name'>Hola! soy Ismael 👋🏾 </motion.p>
         <motion.h1  variants={textVariants}  className='user-role'>Desarrollador Web</motion.h1>
-        <motion.p    className='description-role'>Soy desarrollador Web Full-Stack, especializado en tecnologías de Front-End.</motion.p>
+        <motion.p    className='description-role'>Soy Desarrollador Web Full-Stack, especializado en tecnologías de Front-End.</motion.p>
   <motion.div  variants={textVariants} className='button-container'>
           <motion.button variants={textVariants} className='button-hero'><a href="mailto:ismael.lajud65@gmail.com"> Contáctame</a></motion.button>
-          <motion.button variants={textVariants}  className='button-hero'>Mi ultimo trabajo</motion.button>
+          <motion.button variants={textVariants}  className='button-hero'><a target='_blank' href="https://github.com/IsmaelLajud2">Mi ultimo trabajo</a></motion.button>
         </motion.div>
         <motion.img variants={textVariants}  className='scroll-down' src='Images/scrollDown.png'></motion.img>
       </motion.div>

@@ -151,5 +151,11 @@
     margin-top: 20px;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
 
+}
+
+.logo-title {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
 }

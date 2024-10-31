@@ -83,18 +83,18 @@ const Single = ({ item }) => {
                   background: "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
                   justifyContent: 'center',
                   alignItems: 'center',
-                 
+                
                   width: '100%',
                   height: '100%',
                   backfaceVisibility: 'hidden',
                   cursor: 'pointer',
                   borderRadius:"10px",
                   transform: 'rotateY(180deg)',
-                  color:"black"
+                  color:"#FFFFFF"
                 }}
               >
                 <div className='div-logo'>
-                  <h1>Para realizar este proyecto  utilizé:</h1>
+                  <h1 className='logo-title'>Para realizar este proyecto  utilizé:</h1>
                   <ul className='logo-list' >
                 {
                   item && item.lenguajes.map((lenguaje,index) =>(
