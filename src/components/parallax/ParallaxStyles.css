@@ -14,7 +14,7 @@
 }
 
 .mountains {
-    background-image: url("Images/mountains.webp");
+    background-image: url("/Images/mountains.webp");
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .planets {
-    background-image: url("Images/planets.webp");
+    background-image: url("/Images/planets.webp");
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -34,7 +34,7 @@
 }
 
 .stars {
-    background-image: url("Images/stars.webp");
+    background-image: url("/Images/stars.webp");
     background-size: cover;
     background-position: bottom;
     width: 100%;
