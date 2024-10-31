@@ -65,6 +65,7 @@ const Single = ({ item }) => {
                   left: 0,
                   width: '100%',
                   height: '100%',
+                  borderRadius:"10px",
                   objectFit: 'cover',
                   backfaceVisibility: 'hidden',
                   cursor: 'pointer',

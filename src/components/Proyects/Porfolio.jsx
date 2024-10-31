@@ -10,7 +10,7 @@ const Porfolio = () => {
         title:"Minimalist E-Commerce",
         video:"Videos/MinimalistVideo.mp4",
         description: "E-commerce desarrollado en React, con un enfoque minimalista y un diseño responsive que permite una experiencia de usuario fluida.",
-        link:"https://minimalist-beta.vercel.app/home",
+        link:"https://minimalist-beta.vercel.app",
         lenguajes:[
             'Logos/ReactLogo.png', 
             'Logos/Node.png',
