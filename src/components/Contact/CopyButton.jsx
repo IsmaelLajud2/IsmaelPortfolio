@@ -33,12 +33,14 @@ const manejarClic = () => {
                 className="copy-svg" onClick={manejarClic}/>
          {
             hover && (
+           
+
                 <span 
                 style={{ 
                   position: 'absolute', 
-                  top: '180px', 
-                  left: '40%', 
-                  transform: 'translateX(-50%)',
+                  top: '5px', 
+                  left: '60%', 
+                  transform: 'translateX(-100%)',
                   backgroundColor: 'white', 
                   padding: '5px 10px', 
                   border: '1px solid #ccc', 
@@ -47,6 +49,7 @@ const manejarClic = () => {
                   color:"black",
                   whiteSpace: 'nowrap' 
                 }}
+                
               > 
               {texto}
               </span>

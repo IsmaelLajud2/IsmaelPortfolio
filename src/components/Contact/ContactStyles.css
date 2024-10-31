@@ -27,6 +27,7 @@
     text-align: center;
     display: flex;
     gap: 5px;
+    position: relative;
     padding-top: 10px;
 }
 

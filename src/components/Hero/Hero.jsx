@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
 import '../Hero/HeroStyles.css'
-import JavaScriptSVG from '../../svg/code/JavaScriptSVG.jsx'
+
 import ReactSVG from '../../svg/code/ReactSVG.jsx'
 import NodeSVG from '../../svg/code/NodeSVG.jsx'
 import CssSVG from '../../svg/code/CssSVG.jsx'
 import HtmlSVG from '../../svg/code/HtmlSVG.jsx'
 import MongoDbSVG from '../../svg/code/MongoDbSVG.jsx'
+import JavaScriptSVG from '../../svg/code/JavaScriptSVG.JSX'
 const Hero = () => {
 
  const textVariants={

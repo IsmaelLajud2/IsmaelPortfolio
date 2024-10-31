@@ -17,12 +17,13 @@ const [success, setSuccess] = useState(false)
         e.preventDefault();
     
         emailjs
-          .sendForm('service_w6601v4', 'template_waw8o0v', formRef.current, {
-            publicKey: 'qXKTq5sqRYqCPKa5i',
+          .sendForm(import.meta.env.VITE_API_SERVICE, import.meta.env.VITE_API_TEMPLATE, formRef.current, {
+            publicKey: import.meta.env.VITE_API_KEY,
           })
           .then(
             () => {
               setSuccess(true)
+              formRef.current.reset()
             },
             () => {
               setError(true)
@@ -95,8 +96,8 @@ stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejo
 <textarea className='text-tarea' name="message" id="comentarios" placeholder=''></textarea>
 <label htmlFor='message' className='text-tarealabel'>Comentarios</label>
 <button type='submit' className='form-button'>Enviar</button>
-{error && <div style={{ color: "red" }}>Error al enviar el correo</div>}
-{success && <div style={{ color: "green" }}>¡Correo enviado exitosamente,Gracias por contactar!</div>}
+{error && <div style={{ color: "red" ,paddingTop:"15px"}}>Error al enviar el correo</div>}
+{success && <div style={{ color: "green",paddingTop:"15px" }}>¡Correo enviado exitosamente,Gracias por contactar!</div>}
 </motion.form>
 
         </div>
