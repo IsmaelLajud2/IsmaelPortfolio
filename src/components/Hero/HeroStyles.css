@@ -231,6 +231,8 @@
 
     .imagen-container {
         margin-top: 0;
+        bottom: 100px;
+        left: 20px;
         z-index: 10;
     }
 

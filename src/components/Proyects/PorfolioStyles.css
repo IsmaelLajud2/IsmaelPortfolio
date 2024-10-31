@@ -106,13 +106,16 @@
         height: auto;
         display: flex;
         justify-content: center;
+        overflow: hidden;
+
+
     }
 
     .imagen-proyect {
         width: 100%;
         padding: 10px;
         height: 100%;
-        object-fit: fill;
+        object-fit: contain;
         max-width: 100%;
         border: none;
         border-radius: 10px;
