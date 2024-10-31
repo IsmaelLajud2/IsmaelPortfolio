@@ -219,6 +219,12 @@ input:not(:placeholder-shown)+label {
     }
 
 
+
+    .svg-phone {
+        width: 0;
+        height: 0;
+    }
+
     .form-container {
         width: 400px;
         height: 100%;

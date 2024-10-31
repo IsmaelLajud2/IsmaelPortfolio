@@ -49,6 +49,8 @@ const [succes, setSucces] = useState(false)
  const ref=useRef()
  const formRef =useRef()
  const isInView=useInView(ref,{margin:"-100px"})
+ const formInView=useInView(formRef,{margin:"-100px"})
+
   return (
     <motion.div initial="initial" whileInView="animate" className='contact-section' variants={variants}>
         <motion.div variants={variants} className='contact-textcontainer'>
@@ -68,9 +70,9 @@ const [succes, setSucces] = useState(false)
         </motion.div>
       
         <div className='form-container'>
-    <motion.div ref={ref} initial={{opacity:1}} animate={ isInView && {opacity:0,width:0,height:0}}transition={{delay:2, duration:1}}  className='PhoneSVG'>
+    <motion.div ref={ref} initial={{opacity:1}} animate={ isInView && {opacity:0}}transition={{delay:1.5, duration:0.5}}  className='PhoneSVG'>
           
-<motion.svg ref={ref} className='svg-phone'initial={ isInView &&{ width:"450px" ,height:"450px"}} transition={ isInView &&{delay:2,duration:3}} animate={isInView &&{width:0,height:0}} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<motion.svg ref={ref} className='svg-phone' width="450px" height="450px"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <motion.path
 initial={{pathLength:0}}
 animate={ isInView  && {pathLength:1}}
@@ -80,7 +82,7 @@ stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejo
 </motion.svg>
 </motion.div> 
         <motion.form onSubmit={sendEmail} ref={formRef} className='form-field'
-        initial={{opacity:1}} animate={ isInView &&{opacity:1}}transition={{delay:3, duration:1}} >
+        initial={{opacity:0}} animate={ formInView &&{opacity:1}}transition={{delay:2, duration:1}} >
 
 <input className='input-name' type="text" required id='name' name='name' placeholder='' />
 <label htmlFor='name' className='name-label' >Nombre</label>
