@@ -1,5 +1,11 @@
 import { motion } from 'framer-motion'
 import '../Hero/HeroStyles.css'
+import JavaScriptSVG from '../../svg/code/JavaScriptSVG.jsx'
+import ReactSVG from '../../svg/code/ReactSVG.jsx'
+import NodeSVG from '../../svg/code/NodeSVG.jsx'
+import CssSVG from '../../svg/code/CssSVG.jsx'
+import HtmlSVG from '../../svg/code/HtmlSVG.jsx'
+import MongoDbSVG from '../../svg/code/MongoDbSVG.jsx'
 const Hero = () => {
 
  const textVariants={
@@ -52,7 +58,18 @@ const sliderVariants ={
       <span>Front-End Developer</span>
       </motion.div>
          <div className='imagen-container'>
+          
             <img className='imagen-profile ' src='Images/ProfilePhoto.webp' alt='profileimagen'></img>
+            <div className='svg-container'>
+
+           
+            <JavaScriptSVG className='javaScript-svg'/>
+    <ReactSVG className='react-svg'/>
+    <NodeSVG className='node-svg'/>
+    <CssSVG className='css-svg'/>
+    <HtmlSVG className='html-svg'/>
+    <MongoDbSVG className='mongoDb-svg'/>
+    </div>
          </div>
          </div>
     </div>

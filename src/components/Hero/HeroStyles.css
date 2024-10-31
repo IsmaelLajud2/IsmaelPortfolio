@@ -4,16 +4,10 @@
     position: relative;
 }
 
+
 .imagen-container {
-    height: 100%;
-
-
-    margin-top: 200px;
-    left: 700px;
-    display: flex;
-
-    justify-content: center;
-
+    position: relative;
+    bottom: 70px;
 }
 
 .imagen-profile {
@@ -23,6 +17,50 @@
     object-fit: cover;
 
 }
+
+
+
+.javaScript-svg {
+    top: -120px;
+    position: relative;
+    left: -45px;
+    border-radius: 5px;
+
+}
+
+.react-svg {
+    top: -65px;
+    left: -53px;
+    position: relative;
+
+}
+
+.node-svg {
+    top: -23px;
+    left: -50px;
+    position: relative;
+
+}
+
+.css-svg {
+    bottom: 2px;
+    right: 40px;
+    position: relative;
+
+}
+
+.html-svg {
+    bottom: 16px;
+    right: 35px;
+    position: relative;
+}
+
+.mongoDb-svg {
+    bottom: 45px;
+    right: 30px;
+    position: relative;
+}
+
 
 .wrapper-hero {
     max-width: 1366px;
