@@ -57,7 +57,7 @@ const Single = ({ item }) => {
                 loop
                 muted
                 alt='proyects-imagen'
-                className='front imagen-proyect'
+                className='front-imagen-proyect'
                 src={item.video}
                 style={{
                   position: 'absolute',
