@@ -1,11 +1,12 @@
 
 import '../navbar/NavbarStyles.css'
-import Sidebar from '../navbar/Sidebar'
+import SidebarProyect from './SidebarProyect'
+
 const NavbarSection= () => {
   return (
     <div className='navbar-container'>
         <nav>
-           <Sidebar></Sidebar>
+           <SidebarProyect/>
         </nav>
 
   

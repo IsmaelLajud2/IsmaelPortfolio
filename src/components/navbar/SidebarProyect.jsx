@@ -3,7 +3,7 @@ import '../navbar/NavbarStyles.css'
 import Links from './Links'
 import ToggleButton from './ToggleButton'
 import {  motion } from 'framer-motion'
-const Sidebar = () => {
+const SidebarProyect = () => {
 
   const [open,setOpen] = useState(false)
 
@@ -37,4 +37,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SidebarProyect
