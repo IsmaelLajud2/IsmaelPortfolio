@@ -200,7 +200,7 @@
     }
 }
 
-@media (max-width:960px) {
+@media (max-width:1100px) {
     .text-container {
         font-size: small;
         gap: 30px;
