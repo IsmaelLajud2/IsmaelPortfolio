@@ -6,7 +6,7 @@ import NodeSVG from '../../svg/code/NodeSVG.jsx'
 import CssSVG from '../../svg/code/CssSVG.jsx'
 import HtmlSVG from '../../svg/code/HtmlSVG.jsx'
 import MongoDbSVG from '../../svg/code/MongoDbSVG.jsx'
-import JsLogoSVG from '../../svg/code/JSLOGOSVG.jsx'
+import JsSVG from '../../svg/code/JsSVG.jsx'
 const Hero = () => {
 
  const textVariants={
@@ -64,7 +64,7 @@ const sliderVariants ={
             <div className='svg-container'>
 
            
-            <JsLogoSVG className='javaScript-svg'/>
+            <JsSVG className='javaScript-svg'/>
             
     <ReactSVG className='react-svg'/>
     <NodeSVG className='node-svg'/>
