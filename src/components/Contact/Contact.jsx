@@ -11,7 +11,7 @@ import SocialMedia from './SocialMedia'
 const Contact = () => {
 
 const [error, setError] = useState(false) 
-const [succes, setSucces] = useState(false) 
+const [success, setSuccess] = useState(false) 
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,7 +22,7 @@ const [succes, setSucces] = useState(false)
           })
           .then(
             () => {
-              setSucces(true)
+              setSuccess(true)
             },
             () => {
               setError(true)
@@ -95,8 +95,8 @@ stroke="orange" fill="none" strokeWidth={0.2} strokeLinecap="round" strokeLinejo
 <textarea className='text-tarea' name="message" id="comentarios" placeholder=''></textarea>
 <label htmlFor='message' className='text-tarealabel'>Comentarios</label>
 <button type='submit' className='form-button'>Enviar</button>
-{error && "ERROR"}
-{succes && "Exito"}
+{error && <div style={{ color: "red" }}>Error al enviar el correo</div>}
+{success && <div style={{ color: "green" }}>¡Correo enviado exitosamente,Gracias por contactar!</div>}
 </motion.form>
 
         </div>

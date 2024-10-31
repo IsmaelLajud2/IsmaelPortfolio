@@ -2,7 +2,7 @@
 import '../Contact/SocialMediaStyles.css'
 const SocialMedia = () => {
   return (
-   /* From Uiverse.io by wilsondesouza */ 
+ 
 <ul className="example-2">
   <li className="icon-content">
     <a
