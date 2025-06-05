@@ -58,7 +58,7 @@ const [success, setSuccess] = useState(false)
             <motion.h1 variants={variants} className='title-contact'>Contáctame</motion.h1>
             <motion.div variants={variants} className='items'>
                 <h2 className='h2-contact'>Email</h2>
-                <span className='span-contact'><EmailSvg/><a href='mailto:ismael.lajud65@gmail.com'>ismael.lajud65@gmail.com</a>
+                <span className='span-contact'><EmailSvg/><a href='mailto:ismael.lajud65@gmail.com' title='click para enviarme un correo'>ismael.lajud65@gmail.com</a>
               <CopyButton/>
                 </span>
             </motion.div>
