@@ -36,7 +36,7 @@ const manejarClic = () => {
            
 
                 <span 
-                title='click para enviarme un correo'
+                
                 style={{ 
                   position: 'absolute', 
                   top: '5px', 
